@@ -1,0 +1,10 @@
+version: '3'
+services:
+    prawko-web:
+        image: gagyn/prawko
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./db/:/app/db/
+            - /etc/localtime:/etc/localtime:ro
